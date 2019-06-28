@@ -35,9 +35,6 @@ export default {
     let wheelIsTouched;
     let wheelHandleIsTouched;
 
-    const constSaturation = 1.0;
-    const constBrightness = 1.0;
-
     const { $el } = self;
 
     function setHueFromWheelCoords(x, y) {
@@ -47,7 +44,7 @@ export default {
       let angleDeg = angleRad * 180 / Math.PI + 90;
       if (angleDeg < 0) angleDeg += 360;
       angleDeg = 360 - angleDeg;
-      self.setValue({ hsb: [angleDeg, constSaturation, constBrightness] });
+      self.setValue({ hue: angleDeg });
     }
 
 
