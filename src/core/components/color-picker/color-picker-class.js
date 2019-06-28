@@ -15,6 +15,7 @@ import moduleRgbSliders from './modules/rgb-sliders';
 import moduleSbSpectrum from './modules/sb-spectrum';
 import moduleHsSpectrum from './modules/hs-spectrum';
 import moduleWheel from './modules/wheel';
+import moduleHueWheel from './modules/hue-wheel';
 
 class ColorPicker extends Framework7Class {
   constructor(app, params = {}) {
@@ -75,6 +76,7 @@ class ColorPicker extends Framework7Class {
         'sb-spectrum': moduleSbSpectrum,
         'hs-spectrum': moduleHsSpectrum,
         'wheel': moduleWheel, // eslint-disable-line
+        'hue-wheel': moduleHueWheel, // eslint-disable-line
       },
     });
 
